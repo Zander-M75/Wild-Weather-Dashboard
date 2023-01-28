@@ -1,0 +1,67 @@
+header {
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#currentWeather,
+.citySearch {
+    flex: 1;
+    margin: 0 10px;
+}
+
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-card {
+    flex: 1;
+}
+
+* {
+    list-style-type: none;
+}
+
+.forecast-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.five-day-forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search-form button {
+    border: 2px solid yellow;
+    color: green;
+}
+
+.search-button {
+    background-color: green;
+    color: white;
+}
+
+.search-button:hover {
+    background-color: pink;
+}

@@ -17,17 +17,18 @@
         <h1 class='mt-5 text-center'>Wild Weather Dashboard</h1>
     </header>
     <main class='text-center container'>
-        <div class='my-5 text-center container'>
-            <form id="form" class="shadow-lg row  text-center col-lg-4 col-sm-12 col-md-6 m-8 p-5">
+        <div class='my-5 text-center center container'>
+            <form id="form search-form"
+                class="shadow-lg row citySearch text-center col-lg-4 col-sm-12 col-md-6 m-8 p-5">
                 <label class='m-8' for="#city">City: </label>
                 <input id="city" type="text">
-                <button class='btn' id="search-btn" type='submit'>Search</button>
+                <button class='btn search-button' id="search-btn" type='submit'>Search</button>
             </form>
         </div>
         <div>
             <ul class='button-parent'></ul>
         </div>
-        <div class='hide'>
+        <div class='hide center'>
             <h2 class='text-center current-city'></h2>
             <div class='bg-transparent shadow-lg mx-auto px-5 git prounded  text-center col-lg-4 col-sm-12 card'>
                 <h2>Current Weather:</h2>
@@ -36,12 +37,14 @@
                 <li id='current-temp'></li>
                 <li id='current-wind'></li>
                 <li id='current-humidity'></li>
+
             </div>
         </div>
-        <section class='container hide'>
+        <section class='container forecast-container hide'>
             <div class='row text-center'>
                 <h2 class='m-6 px-5 forecast text-center'>5-Day Forecast</h2>
-                <div class='bg-transparent shadow-lg rounded text-center card day m-4 col-xs-12 col-lg col-md-6'>
+                <div
+                    class='bg-transparent five-day-forecast shadow-lg rounded text-center card day m-4 col-xs-12 col-lg col-md-6'>
                     <img class='upcoming-icon' alt='weather icon' style='width: 50px; height: 50px;'>
                     <ul class='upcoming-weather'></ul>
                     <li class='upcoming-temp'></li>
