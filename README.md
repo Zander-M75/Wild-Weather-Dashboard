@@ -17,6 +17,8 @@ Deployed Link:
 
 ## Screenshot
 
+![Screenshot of Wild Weather Dashboard](/Weather-Dashboard.png)
+
  
 
 
@@ -25,5 +27,4 @@ Deployed Link:
 
 
 ## Contact
-My GitHub username is: Zander-M75 
-My email address is: zandermarenberg@gmail.com
+My GitHub username is: Zander-M75, and my email address is: zandermarenberg@gmail.com
