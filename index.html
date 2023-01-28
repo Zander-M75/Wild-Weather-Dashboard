@@ -18,7 +18,7 @@
     </header>
     <main class='text-center container'>
         <div class='my-5 text-center container'>
-            <form id="weather-form" class="shadow-lg row  text-center col-lg-4 col-sm-12 col-md-6 m-8 p-5">
+            <form id="form" class="shadow-lg row  text-center col-lg-4 col-sm-12 col-md-6 m-8 p-5">
                 <label class='m-8' for="#city">City: </label>
                 <input id="city" type="text">
                 <button class='btn' id="search-btn" type='submit'>Search</button>
@@ -28,7 +28,7 @@
             <ul class='button-parent'></ul>
         </div>
         <div class='hide'>
-            <h2 class='text-center name-city-current'></h2>
+            <h2 class='text-center current-city'></h2>
             <div class='bg-transparent shadow-lg mx-auto px-5 git prounded  text-center col-lg-4 col-sm-12 card'>
                 <h2>Current Weather:</h2>
                 <img class='icon' alt='weather icon' style='width: 50px; height: 50px;'>
@@ -42,7 +42,7 @@
             <div class='row text-center'>
                 <h2 class='m-6 px-5 forecast text-center'>5-Day Forecast</h2>
                 <div class='bg-transparent shadow-lg rounded text-center card day m-4 col-xs-12 col-lg col-md-6'>
-                    <img class='futureIcon' alt='weather icon' style='width: 50px; height: 50px;'>
+                    <img class='upcoming-icon' alt='weather icon' style='width: 50px; height: 50px;'>
                     <ul class='upcoming-weather'></ul>
                     <li class='upcoming-temp'></li>
                     <li class='upcoming-wind'></li>
@@ -87,7 +87,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
