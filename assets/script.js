@@ -1,7 +1,5 @@
-//for weather api
-var apiKey = 'f68137963a992fce4db0ebc2883bf550';
 
-//for Dayjs
+var apiKey = 'f68137963a992fce4db0ebc2883bf550';
 var today = dayjs()
 
 var form = document.querySelector('form');
