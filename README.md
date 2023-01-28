@@ -12,7 +12,7 @@ This project is a weather dashboard that allows users to search for a specific c
 
 Github Repo: https://github.com/Zander-M75/Wild-Weather-Dashboard/commits/main
 
-Deployed Link:
+Deployed Link: https://zander-m75.github.io/Wild-Weather-Dashboard/
 
 
 ## Screenshot
