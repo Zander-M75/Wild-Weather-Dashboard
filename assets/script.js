@@ -15,7 +15,7 @@ var upcomingWeather = document.querySelector('.upcoming-weather');
 var upcomingTemp = document.querySelector('#upcoming-temp');
 var upcomingHumidity = document.querySelector('#upcoming-humidity');
 var upcomingWind = document.querySelector('#upcoming-wind');
-var upcominfForecast = document.querySelector('.day');
+var upcomingForecast = document.querySelector('.day');
 
 var cityQuery = document.querySelector('#city');
 var savedCities = JSON.parse(localStorage.getItem('cities')) || [];
@@ -100,6 +100,7 @@ function getForecast(city) {
 function displayForecast(data) {
     upcomingWeather.classList.remove('hide');
     var forecast = data.list;
+    upcomingForecast.innerHTML = '';
     for (var i = 0; i < forecast.length; i++) {
         if (forecast[i].dt_txt.indexOf('15:00:00') !== -1) {
             var upcomingDate = document.createElement('h5');
@@ -118,7 +119,7 @@ function displayForecast(data) {
             upcomingDiv.appendChild(upcomingIcon);
             upcomingDiv.appendChild(upcomingTemp);
             upcomingDiv.appendChild(upcomingHumidity);
-            upcominfForecast.appendChild(upcomingDiv);
+            upcomingForecast.appendChild(upcomingDiv);
         }
     }
 }
@@ -139,8 +140,6 @@ function buttonClick(event) {
 buttonParent.addEventListener('click', buttonClick);
 
 getSavedCities();
-
-
 
 
 
